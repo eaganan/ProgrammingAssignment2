@@ -11,7 +11,7 @@
 #get() get matrix from cache
 #set_inverse() set inverse matrix into cache
 #get_inverse() get inverse matrix from cache
-the function to asign the matrix and its inverse to cache.
+
 makeCacheMatrix <- function(x = matrix()) {
         inv.x <- NULL
         set <- function(y) {
@@ -33,6 +33,7 @@ makeCacheMatrix <- function(x = matrix()) {
 #First it validates if the inverse already exist  and returns its value from cache
 #or else, it computes the inverse and uses function set_inverse() to cache inverse and
 #returns its value
+
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         inv.x <- x$get_inverse()
